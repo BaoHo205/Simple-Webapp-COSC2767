@@ -20,8 +20,9 @@
       <hr class="my-4">
       <p>You can visit the website of School of Science, Engineering and Technology (SSET) of RMIT Vietnam by clicking to the button below!</p>
       <p>This is the new change that involves Jenkins, Maven, Ansible, Docker, ... in the pipeline! Woohoo!</p>
-      <p>I love BreadSocute!</p>
-      <p>This is new push to test CI-CD pipeline</p>
+      <jsp:useBean id="now" class="java.util.Date" />
+      <fmt:formatDate value="${now}" pattern="yyyy-MM-dd HH:mm:ss" var="formattedDate"/>
+      <p>The current date and time is: ${formattedDate}</p>
       <a class="btn btn-primary btn-lg" href="https://www.rmit.edu.vn/about-us/schools-and-centres/school-of-science-engineering-and-technology" role="button">Learn more about SSET</a>
       <a class="btn btn-success btn-lg" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button">Learn more about Bootstrap CSS Framework</a>
     </div>
